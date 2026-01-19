@@ -1,3 +1,16 @@
+# =============================================================================
+# This file is adapted from the RepVGG project:
+#   https://github.com/DingXiaoH/RepVGG
+#
+# Original paper:
+#   Xiaohan Ding, Xiangyu Zhang, Ningning Ma, Jungong Han,
+#   Guiguang Ding, Jian Sun
+#   "RepVGG: Making VGG-style ConvNets Great Again"
+#   IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -19,4 +32,5 @@ class SEBlock(nn.Module):
         x = self.up(x)
         x = torch.sigmoid(x)
         x = x.view(-1, self.input_channels, 1, 1)
+
         return inputs * x
