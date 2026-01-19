@@ -1,3 +1,16 @@
+# =============================================================================
+# This file is adapted from the RepVGG project:
+#   https://github.com/DingXiaoH/RepVGG
+#
+# Original paper:
+#   Xiaohan Ding, Xiangyu Zhang, Ningning Ma, Jungong Han,
+#   Guiguang Ding, Jian Sun
+#   "RepVGG: Making VGG-style ConvNets Great Again"
+#   IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 # --------------------------------------------------------
 # RepVGG: Making VGG-style ConvNets Great Again (https://openaccess.thecvf.com/content/CVPR2021/papers/Ding_RepVGG_Making_VGG-Style_ConvNets_Great_Again_CVPR_2021_paper.pdf)
 # Github source: https://github.com/DingXiaoH/RepVGG
@@ -302,3 +315,4 @@ def repvgg_model_convert(model:torch.nn.Module, save_path=None, do_copy=True):
     if save_path is not None:
         torch.save(model.state_dict(), save_path)
     return model
+
