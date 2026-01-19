@@ -1,3 +1,15 @@
+# =============================================================================
+# This file is adapted from the RoMa project:
+#   https://github.com/Parskatt/RoMa
+#
+# Original paper:
+#   Johan Edstedt, Qiyu Sun, Georg Bökman, Mårten Wadenbäck, Michael Felsberg
+#   "RoMa: Robust Dense Feature Matching"
+#   IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import torch
 
 
@@ -10,4 +22,5 @@ def kde(x, std = 0.1, half = True, down = None):
     else:
         scores = (-torch.cdist(x,x)**2/(2*std**2)).exp()
     density = scores.sum(dim=-1)
+
     return density
