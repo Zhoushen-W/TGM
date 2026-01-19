@@ -1,3 +1,15 @@
+# =============================================================================
+# This file is adapted from the RoMa project:
+#   https://github.com/Parskatt/RoMa
+#
+# Original paper:
+#   Johan Edstedt, Qiyu Sun, Georg Bökman, Mårten Wadenbäck, Michael Felsberg
+#   "RoMa: Robust Dense Feature Matching"
+#   IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import warnings
 import numpy as np
 import cv2
@@ -659,3 +671,4 @@ def check_not_i16(im):
 def check_rgb(im):
     if im.mode != "RGB":
         raise NotImplementedError("Can't handle non-RGB images")
+
