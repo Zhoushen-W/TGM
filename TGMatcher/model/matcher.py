@@ -1,3 +1,15 @@
+# =============================================================================
+# This file is adapted from the RoMa project:
+#   https://github.com/Parskatt/RoMa
+#
+# Original paper:
+#   Johan Edstedt, Qiyu Sun, Georg Bökman, Mårten Wadenbäck, Michael Felsberg
+#   "RoMa: Robust Dense Feature Matching"
+#   IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -798,4 +810,5 @@ class RegressionMatcher(nn.Module):
         if batched:
             return (warp, certainty[:, 0])
         else:
+
             return (warp[0], certainty[0, 0])
