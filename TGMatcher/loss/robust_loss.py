@@ -1,3 +1,15 @@
+# =============================================================================
+# This file is adapted from the RoMa project:
+#   https://github.com/Parskatt/RoMa
+#
+# Original paper:
+#   Johan Edstedt, Qiyu Sun, Georg Bökman, Mårten Wadenbäck, Michael Felsberg
+#   "RoMa: Robust Dense Feature Matching"
+#   IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -196,4 +208,5 @@ class Robust_Loss(nn.Module):
                 tot_loss = tot_loss + scale_weights[scale] * reg_loss
             prev_epe = (flow.permute(0, 2, 3, 1) - x2).norm(dim=-1).detach()
         return tot_loss
+
 
