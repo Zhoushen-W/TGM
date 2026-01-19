@@ -1,0 +1,14 @@
+torch
+torchvision
+einops
+opencv-python
+kornia
+albumentations
+loguru
+tqdm
+matplotlib
+h5py
+wandb
+timm
+poselib
+fused-local-corr>=0.2.2

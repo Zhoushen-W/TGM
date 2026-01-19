@@ -1,0 +1,26 @@
+# sim_config.yaml
+# 用于统一配置 sim_eval.py 主函数参数
+
+path:
+  dem_path: "/home/wenzhoushen/datasets/terrain/z_30m_12regions/z_30m_cppt5c_ibcao_crtd_BinDil_region_5.tif"
+  patch_save_path: "./Data/terrain/simulation2"
+  match_save_path: "./Experiment/localization/fig/match2"
+  strip_save_path: "./Experiment/localization/fig/strip2.svg"
+  trajectory_save_path: "./Experiment/localization/fig/trajectory_vis2.svg"
+
+sim_para:
+  new_simulation: False
+  is_visual: True
+  start_coord: [-563541.0, 1195319.0] # [-602847.3, 1150057.4]
+  end_coord: [-496906.0, 1154223.0] # [-580000.0, 1138000.0]
+  delta_x: 15
+  strip_shape: [256, 256]
+  mb_patch_size: 256
+  mb_patch_stride: 64
+  dem_patch_size: 512
+  dem_subpatch_size: 256
+  dem_subpatch_stride: 64
+  N_beams: 681
+  resolution: 30.0
+  swath_factor: 1.4
+  noise_ratio: 0.005
