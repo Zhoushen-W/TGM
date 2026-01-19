@@ -145,7 +145,23 @@ Experiment/
 ---
 
 
+## 🙏 致谢
+
+本项目在实现过程中参考并使用了以下开源项目的代码：
+
+- RoMa: Robust Dense Feature Matching  
+  https://github.com/Parskatt/RoMa  
+  License: MIT
+
+- RepVGG: Making VGG-style ConvNets Great Again  
+  https://github.com/DingXiaoH/RepVGG  
+  License: MIT
+
+---
+
+
 ## 📬 联系方式
 
 如有仿真或训练流程相关问题，欢迎提交 issue 或联系作者。
+
 
