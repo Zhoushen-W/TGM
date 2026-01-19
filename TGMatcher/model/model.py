@@ -1,3 +1,15 @@
+# =============================================================================
+# This file is adapted from the RoMa project:
+#   https://github.com/Parskatt/RoMa
+#
+# Original paper:
+#   Johan Edstedt, Qiyu Sun, Georg Bökman, Mårten Wadenbäck, Michael Felsberg
+#   "RoMa: Robust Dense Feature Matching"
+#   IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
+#
+# Licensed under the MIT License.
+# =============================================================================
+
 import sys
 import os
 import warnings
@@ -188,3 +200,4 @@ def tgm_model(
 #     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
 #     model_size_MB = total_params * 2 / (1024 * 1024)
 #     print(f"Total params: {total_params}, Trainable params: {trainable_params}, Model size: {model_size_MB:.2f} MB")
+
