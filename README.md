@@ -15,6 +15,27 @@
 ---
 
 
+## 👀 可视化结果
+
+### 匹配结果展示
+
+<p align="center">
+  <img src="assets/beam_1_matches.svg" width="48%">
+  <img src="assets/beam_24_matches.svg" width="48%">
+</p>
+
+---
+
+### 仿真结果展示
+
+<p align="center">
+  <img src="assets/trajectory_vis1.svg" width="40%">
+  <img src="assets/trajectory_vis2.svg" width="40%">
+</p>
+
+---
+
+
 ## ✨ 主要特性
 
 - 🤖 基于深度学习的地形图像匹配方法
@@ -163,5 +184,6 @@ Experiment/
 ## 📬 联系方式
 
 如有仿真或训练流程相关问题，欢迎提交 issue 或联系作者。
+
 
 
